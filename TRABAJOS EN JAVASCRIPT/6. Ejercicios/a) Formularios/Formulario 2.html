@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso de Usuarios</title>
+</head>
+<body>
+    <h4>Acceso de Usuarios</h4>
+    <!--Se pone el formmulario-->
+    <form>
+        <h5>Usuarios</h5>
+        <!--Usamos la etiqueta "input" para solicitar los datos-->
+        <input type="text" id="usuarios" onclick="">
+
+        <!--Vamos a solicitarle al usuario una contraseña-->
+        <h5>Contraseña</h5>
+         <!--Usamos la etiqueta "input" para solicitar los datos, en este caso una contraseña-->
+        <input type="password" id="contraseña">
+        
+        <!--Se utiliza el input para colocar un botón y el value para colocarle texto-->
+        <br>
+        <br>
+        <input type="button" value="Confirmar" onclick="verificar()"> 
+
+        <!--Se hará una función-->
+        <script>
+            let control = 0;
+            let Contraseña = 'pass';
+
+            //Se declara una función
+            function verificar(){
+                let contraseña = document.getElementById('contraseña').value;
+                if (contraseña !=Contraseña){
+                    alert('La contraseña es incorrecta, intenta de nuevo.');
+                } else{
+                    window.open("https://www.youtube.com/");
+                }
+            }
+        </script>
+    </form>    
+</body>
+</html>
